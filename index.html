@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="title">Your Library</h1>
+    <hr>
+    <button id="book-details">Enter Book Details</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            
+                <span class="close">&times;</span>
+                <h2 class="book-detail">Add a New Book</h2><br>
+                <p>Title</p>
+                <input type="text" id="book-name" size="100" required>
+                <p>Author</p>
+                <input type="text" id="book-author" size="100" required>
+                <p>Pages</p>
+                <input type="number" id="book-pages" size="100" required>
+                <p>Have you Read the Book?</p>
+                <div id="radio-toolbar">
+                    <form name="readForm">
+                        <input type="radio" id="yes" name="read" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="read" value="No">
+                        <label for="no">No</label>
+                    </form>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button id="submit">Add</button>
+        </div>
+    </div>
+    <table>
+        <!-- Table content from books goes here. -->
+    </table>
+</body>
+</html>
